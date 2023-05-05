@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+      
+      <header class="sticky-top">
+         <nav class="navbar navbar-expand-lg bg-body-tertiary fondo-blanco">
+            <div class="container">
+               <div class="logo">
+                  <a href="">
+                     <img src="https://www.pudahuel.cl/wp-content/themes/patatin/img/logo_pudahuel_horizontal_54-01.svg" alt="" class="imagen-logo">
+                  </a>
+               </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#seccion-1">inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#seccion-2">Locación</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#seccion-3">Compra tu Ticket</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#seccion-4">Gala Pudahuel</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#playlist">Playlist</a>
+                   </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+      <main>
+
+         <!-- Inicio -->
+         <div id="seccion-1" class="fondo-cabecera d-flex flex-column justify-content-center align-items-center pb-md-5">
+            <picture data-aos="fade-up">
+               <source media="(min-width:1024px)" srcset="https://static.puntoticket.com/especiales/swg147_lucero-mijares/img/luceromijares__desktop.png">
+               <source media="(min-width:320px)" srcset="https://static.puntoticket.com/especiales/swg147_lucero-mijares/img/luceromijares__movil.png">
+               <img src="https://static.puntoticket.com/especiales/swg147_lucero-mijares/img/luceromijares__movil.png" alt="Lucero &amp; Mijares" class="img-fluid">
+            </picture>
+            <div class="countdown">
+               <div class="time-section" id="days">
+                 <div class="time-group">
+                   <div class="time-segment">
+                     <div class="segment-display">
+                       <div class="segment-display__top"></div>
+                       <div class="segment-display__bottom"></div>
+                       <div class="segment-overlay">
+                         <div class="segment-overlay__top"></div>
+                         <div class="segment-overlay__bottom"></div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="time-segment">
+                     <div class="segment-display">
+                       <div class="segment-display__top"></div>
+                       <div class="segment-display__bottom"></div>
+                       <div class="segment-overlay">
+                         <div class="segment-overlay__top"></div>
+                         <div class="segment-overlay__bottom"></div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <p>Días</p>
+               </div>
+               <div class="time-section" id="hours">
+                 <div class="time-group">
+                   <div class="time-segment">
+                     <div class="segment-display">
+                       <div class="segment-display__top"></div>
+                       <div class="segment-display__bottom"></div>
+                       <div class="segment-overlay">
+                         <div class="segment-overlay__top"></div>
+                         <div class="segment-overlay__bottom"></div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="time-segment">
+                     <div class="segment-display">
+                       <div class="segment-display__top"></div>
+                       <div class="segment-display__bottom"></div>
+                       <div class="segment-overlay">
+                         <div class="segment-overlay__top"></div>
+                         <div class="segment-overlay__bottom"></div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <p>Horas</p>
+               </div>
+               <div class="time-section" id="minutes">
+                 <div class="time-group">
+                   <div class="time-segment">
+                     <div class="segment-display">
+                       <div class="segment-display__top"></div>
+                       <div class="segment-display__bottom"></div>
+                       <div class="segment-overlay">
+                         <div class="segment-overlay__top"></div>
+                         <div class="segment-overlay__bottom"></div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="time-segment">
+                     <div class="segment-display">
+                       <div class="segment-display__top"></div>
+                       <div class="segment-display__bottom"></div>
+                       <div class="segment-overlay">
+                         <div class="segment-overlay__top"></div>
+                         <div class="segment-overlay__bottom"></div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <p>Minutos</p>
+               </div>
+               <div class="time-section" id="seconds">
+                  <div class="time-group">
+                    <div class="time-segment">
+                      <div class="segment-display">
+                        <div class="segment-display__top"></div>
+                        <div class="segment-display__bottom"></div>
+                        <div class="segment-overlay">
+                          <div class="segment-overlay__top"></div>
+                          <div class="segment-overlay__bottom"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="time-segment">
+                      <div class="segment-display">
+                        <div class="segment-display__top"></div>
+                        <div class="segment-display__bottom"></div>
+                        <div class="segment-overlay">
+                          <div class="segment-overlay__top"></div>
+                          <div class="segment-overlay__bottom"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Segundos</p>
+               </div>
+            </div>  
+         </div>
+         <!-- Fin Inicio -->
+
+         <!-- Locacion -->
+         <div id="seccion-2" class="bg-black fondo-negro py-md-5">
+               <div class="container">
+                  <div class="row align-items-center">
+                     <div class="col-12 col-md-5 text-center">
+                        <div class="text-center">
+                           <div class="mb-3 mb-lg-2">
+                              <img src="https://static.puntoticket.com/especiales/swg147_lucero-mijares/img/mapa.png" class="img-fluid" alt="Mapa">
+                           </div>
+                           <h6 class="scheme-description d-block pb-2">Movistar Arena</h6>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-7">
+                        <div class="table-container p-1 p-md-0">
+                           <div class="table-responsive">
+                              <table class="table-price table-four-cols table">
+                                 <thead>
+                                    <tr>
+                                       <th>&nbsp;</th>
+                                       <th>Precio</th>
+                                       <th>Cargo</th>
+                                       <th>Total</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas1">&nbsp;</span>
+                                             <strong class="place-name">Primeras Filas</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 120.000</td>
+                                       <td>$ 18.000</td>
+                                       <td>$ 138.000</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas2">&nbsp;</span>
+                                             <strong class="place-name">Diamante Vip</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 100.000</td>
+                                       <td>$ 15.000</td>
+                                       <td>$ 115.000</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas3">&nbsp;</span>
+                                             <strong class="place-name">Diamante</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 90.000</td>
+                                       <td>$ 13.500</td>
+                                       <td>$ 103.500</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas4">&nbsp;</span>
+                                             <strong class="place-name">Diamante Lateral</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 85.000</td>
+                                       <td>$ 12.750</td>
+                                       <td>$ 97.750</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas5">&nbsp;</span>
+                                             <strong class="place-name">Platinum Vip</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 90.000</td>
+                                       <td>$ 13.500</td>
+                                       <td>$ 103.500</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas6">&nbsp;</span>
+                                             <strong class="place-name">Platinum</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 80.000</td>
+                                       <td>$ 12.000</td>
+                                       <td>$ 92.000</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas7">&nbsp;</span>
+                                             <strong class="place-name">Platinum Lateral</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 70.000</td>
+                                       <td>$ 10.500</td>
+                                       <td>$ 80.500</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas8">&nbsp;</span>
+                                             <strong class="place-name">Golden</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 62.000</td>
+                                       <td>$ 9.300</td>
+                                       <td>$ 71.300</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas9">&nbsp;</span>
+                                             <strong class="place-name">Golden Lateral</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 56.000</td>
+                                       <td>$ 8.400</td>
+                                       <td>$ 64.400</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas10">&nbsp;</span>
+                                             <strong class="place-name">Platea Baja Diamante</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 70.000</td>
+                                       <td>$ 10.500</td>
+                                       <td>$ 80.500</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas11">&nbsp;</span>
+                                             <strong class="place-name">Platea Baja Golden</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 65.000</td>
+                                       <td>$ 9.750</td>
+                                       <td>$ 74.750</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas12">&nbsp;</span>
+                                             <strong class="place-name">Platea Baja Silver</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 56.000</td>
+                                       <td>$ 8.400</td>
+                                       <td>$ 64.400</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas13">&nbsp;</span>
+                                             <strong class="place-name">Platea Alta Golden</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 38.000</td>
+                                       <td>$ 5.700</td>
+                                       <td>$ 43.700</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas14">&nbsp;</span>
+                                             <strong class="place-name">Platea Alta Silver</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 28.000</td>
+                                       <td>$ 4.200</td>
+                                       <td>$ 32.200</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas15">&nbsp;</span>
+                                             <strong class="place-name">Tribuna</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 18.000</td>
+                                       <td>$ 2.700</td>
+                                       <td>$ 20.700</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas16">&nbsp;</span>
+                                             <strong class="place-name">Silla de Ruedas</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 40.000</td>
+                                       <td>$ 6.000</td>
+                                       <td>$ 46.000</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="scheme-mark">
+                                             <span class="badge pfilas16">&nbsp;</span>
+                                             <strong class="place-name">Acompañante silla de ruedas</strong>
+                                          </div>
+                                       </td>
+                                       <td>$ 40.000</td>
+                                       <td>$ 6.000</td>
+                                       <td>$ 46.000</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <ul class="small pb-5">
+                              <li> <span class="list-text">Toda persona que ingrese al recinto debe tener su entrada.</span></li>
+                              <li> <span class="list-text">Mapa Referencial.</span></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+         <!-- Fin Locacion -->
+
+         <!-- Compra Ticket -->
+         <div id="seccion-3" class="bg-dark fondo-compra py-5">
+            <div class="text-center pb-4">
+               <h3>Obtén tu ticket para ver “Hasta que se nos hizo”<br class="d-none d-md-block"> de Lucero &amp; Mijares en Movistar Arena</h3>
+            </div>
+            <div class="container">
+                  <div class="col-12">
+                     <div class="col text-center">
+                        <a href="https://www.puntoticket.com/Compra/CategoriaTicket?EventoID=SWG147&amp;CalID=1&amp;CategoriaTicket=2" class="btn btn-lg btn-outline-light btn-block ">
+                           COMPRAR TICKET
+                        </a>
+                     </div>
+                  </div>
+            </div>
+         </div>
+         <!-- Fin Compra Ticket -->
+
+         <!-- Descripcion -->
+         <div class="bg-black py-5">
+            <div class="mx-3">
+               <div class="col-12 col-md-6 mx-auto offset-md-2" data-aos="fade-down" data-aos-delay="200">
+                  <h4 class="pre--parrafo pb-2">Lucero &amp; Mijares sin lugar a dudas, es una de las parejas más destacadas y queridas del mundo del espectáculo de habla hispana.</h4>
+                  <p class="texto--parrafo">
+                     Radio Pudahuel se viste de Gala para traer un concierto espectacular, con todo el ritmo, romanticismo y encanto de los artistas mexicanos LUCERO &amp; MIJARES. La gira internacional que los traerá a Chile - “Hasta que se nos Hizo” - el próximo 20 de julio en Movistar Arena, será un show que tendrá sorpresas y contará con la interpretación de sus mayores éxitos, entre ellos “Soldado del Amor”, El Privilegio de Amar”, “Electricidad”, “Ya No”.
+                     <br><br>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- Fin Descripcion -->
+
+
+         <!-- Notas Pudahuel -->
+         <div id="seccion-4" class="fondo-resena py-5">
+            <div class="container py-3 fondo-negro-transparente">
+               <div class="text-center py-3">
+                  <h2 class="texto-rojo text-uppercase pb-3"> La gala en Pudahuel.cl </h2>
+
+               </div>
+               
+               <div class="row">
+                  <!--
+                  <?php
+                  $args = array(
+                     'posts_per_page' => 3,
+                     'post_type' => 'post',
+                  );
+                  $query = new WP_Query( $args );
+                  while ( $query->have_posts() ):
+                  $query->the_post();
+                  ?>
+                  -->
+                  <div class="col-xl-3 col-md-6 pb-3" data-aos="fade-down" data-aos-delay="200">
+                     <article>
+                        <a href="">
+                           <figure>
+                              <img src="https://www.pudahuel.cl/wp-content/uploads/2023/05/Luis-Miguel-2-768x432.jpg" alt="Luis Miguel" class="img-fluid">
+                           </figure>
+                           <figcaption> <h3 class="titulo-nota">Entradas Luis Miguel en Chile: Estos son los precios oficiales para los tres conciertos en el Movistar Arena </h3> </figcaption>
+                        </a>
+                     </article>
+                  </div>
+                  <div class="col-xl-3 col-md-6 pb-3" data-aos="fade-down" data-aos-delay="200">
+                     <article>
+                        <a href="">
+                           <figure>
+                              <img src="https://www.pudahuel.cl/wp-content/uploads/2023/05/Nicolas-Solabarrieta--768x432.jpg" alt="Nicolas Solabarrieta" class="img-fluid">
+                           </figure>
+                           <figcaption> <h3 class="titulo-nota">Él es Nicolás Solabarrieta, el hijo mayor de Ivette Vergara y Fernando Solabarrieta</h3> </figcaption>
+                        </a>
+                     </article>
+                  </div>
+                  <div class="col-xl-3 col-md-6 pb-3" data-aos="fade-down" data-aos-delay="200">
+                     <article>
+                        <a href="">
+                           <figure>
+                              <img src="https://www.pudahuel.cl/wp-content/uploads/2023/05/Gary-Medel-esposa-Cristina-Morales-768x432.jpg" alt="Gary Medel" class="img-fluid">
+                           </figure>
+                           <figcaption> <h3 class="titulo-nota">Impacto el mundo del espectáculo: Esposa de Gary Medel confirma que inició proceso de separación</h3> </figcaption>
+                        </a>
+                     </article>
+                  </div>
+                  <div class="col-xl-3 col-md-6 pb-3" data-aos="fade-down" data-aos-delay="200">
+                     <article>
+                        <a href="">
+                           <figure>
+                              <img src="https://www.pudahuel.cl/wp-content/uploads/2023/05/Bono-para-mujeres-2023--768x432.jpg" alt="Bono Mujeres" class="img-fluid">
+                           </figure>
+                           <figcaption> <h3 class="titulo-nota">Bono para mujeres 2023: ¿Cuáles son los beneficios que pueden recibir ellas?</h3> </figcaption>
+                        </a>
+                     </article>
+                  </div>
+
+               
+                  <!--
+                     <?php endwhile;  ?>
+                     <?php wp_reset_postdata(); ?>
+                   -->
+               
+               </div>
+            </div> <!-- Fin Row -->
+         </div>
+         <!-- Fin Notas Pudahuel -->
+
+         <!-- Playlist -->
+         <div id="playlist">
+
+         </div>
+         <!-- Fin Playlist -->
+      </main>
+    </div>.
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script>
+      AOS.init();
+   </script>
+</body>
+</html>

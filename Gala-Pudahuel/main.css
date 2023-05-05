@@ -1,0 +1,335 @@
+* {
+    color: white;
+    box-sizing: border-box;
+}
+:root {
+    --fila1: #f9ad00;
+    --fila2: #ffaf87;
+    --fila3: #f87117;
+    --fila4: #ff3600;
+    --fila5: #ff98e1;
+    --fila6: #ff06ed;
+    --fila7: #e000d4;
+    --fila8: #6b223e;
+    --fila9: #dd0035;
+    --fila10: #95ffd0;
+    --fila11: #00d06b;
+    --fila12: #00d6f7;
+    --fila13: #2981c3;
+    --fila14: #2d4192;
+    --fila15: #6e2cd1;
+    --fila16: #c7d000;
+
+    --rojo: #d40000;
+    --rojo-claro: #e20000;
+}
+
+/* Utilidades */
+
+.fondo-blanco{
+    background: rgba(255, 255, 255, 0.5);
+}
+.fondo-negro-transparente{
+    background: rgba(0, 0, 0, 0.7);
+}
+/* Fin Utilidades */
+
+
+/* Header */
+a {
+    text-decoration: none;
+}
+.nav-item a{
+    color: var(--rojo);
+    text-transform: uppercase;
+}
+.nav-itema:hover{
+    color: black;
+}
+.imagen-logo{
+    width: 300px;
+}
+/* Fin Header */
+
+/* Cabecera */
+.fondo-cabecera {
+    background-image: url(https://static.puntoticket.com/especiales/swg147_lucero-mijares/img/fondo-cabecera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Clock */
+
+.countdown {
+    /* margin: 100px auto; */
+    /* width: 50%; */
+    display: flex;
+    gap: 15px;
+    font-family: sans-serif;
+  }
+  
+  .time-section {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .time-group {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .time-segment {
+    display: block;
+    font-size: 50px;
+    font-weight: 900;
+    width: 50px;
+  }
+  
+  .segment-display {
+    position: relative;
+    height: 100%;
+  }
+  
+  .segment-display__top,
+  .segment-display__bottom {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    position: relative;
+  }
+  
+  .segment-display__top {
+    line-height: 1.5;
+    color: #eee;
+    background-color: #111;
+    /* background-color: #b20505; */
+  }
+  
+  .segment-display__bottom {
+    line-height: 0;
+    color: #fff;
+    background-color: #333;
+    /* background-color: #ce473a; */
+  }
+  
+  .segment-overlay {
+    position: absolute;
+    top: 0;
+    perspective: 400px;
+    height: 100%;
+    width: 50px;
+  }
+  
+  .segment-overlay__top,
+  .segment-overlay__bottom {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .segment-overlay__top {
+    top: 0;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #111;
+    /* background-color: #b20505; */
+    transform-origin: bottom;
+  }
+  
+  .segment-overlay__bottom {
+    bottom: 0;
+    line-height: 0;
+    color: #eee;
+    background-color: #333;
+    /* background-color: #ce473a; */
+    border-top: 2px solid black;
+    transform-origin: top;
+  }
+  
+  .segment-overlay.flip .segment-overlay__top {
+    animation: flip-top 0.8s linear;
+  }
+  
+  .segment-overlay.flip .segment-overlay__bottom {
+    animation: flip-bottom 0.8s linear;
+  }
+  
+  @keyframes flip-top {
+    0% {
+      transform: rotateX(0deg);
+    }
+    50%,
+    100% {
+      transform: rotateX(-90deg);
+    }
+  }
+  
+  @keyframes flip-bottom {
+    0%,
+    50% {
+      transform: rotateX(90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+  
+  @media (max-width:768px){
+
+    .countdown {
+        gap: 5px;
+    }
+    
+    .time-group {
+        display: flex;
+        gap: 2px;
+    }
+
+    .time-section {
+        font-size: 10px;
+    }
+    
+    .time-segment {
+        font-size: 20px;
+        font-weight: 900;
+        width: 30px;
+    }
+    .segment-overlay {
+        width: 30px;
+    }
+      
+  }
+  /* Fin Clock */
+/* Fin Cabecera */
+
+/* Locacion */
+    /* Tabla de Locacion */
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    
+}
+
+td{
+    font-size: .8rem;
+}
+th{
+    min-width: 80px;
+}
+
+.place-name {
+    font-size: 1rem;
+}
+.badge {
+    border-radius: 50%;
+}
+.pfilas1 {
+    background:var(--fila1) ;
+}
+.pfilas2 {
+    background:var(--fila2) ;
+}
+.pfilas3 {
+    background:var(--fila3) ;
+}
+.pfilas4 {
+    background:var(--fila4) ;
+}
+.pfilas5 {
+    background:var(--fila5) ;
+}
+.pfilas6 {
+    background:var(--fila6) ;
+}
+.pfilas7 {
+    background:var(--fila7) ;
+}
+.pfilas8 {
+    background:var(--fila8) ;
+}
+.pfilas9 {
+    background:var(--fila9) ;
+}
+.pfilas10 {
+    background:var(--fila10) ;
+}
+.pfilas11 {
+    background:var(--fila11) ;
+}
+.pfilas12 {
+    background:var(--fila12) ;
+}
+.pfilas13 {
+    background:var(--fila13) ;
+}
+.pfilas14 {
+    background:var(--fila14) ;
+}
+.pfilas15 {
+    background:var(--fila15) ;
+}
+.pfilas16 {
+    background:var(--fila16) ;
+}
+
+    /* Fin Tabla de Locacion */
+/* Fin Locacion */
+
+/* Compra Ticket */
+.fondo-compra {
+    background-image: url(https://static.puntoticket.com/especiales/swg147_lucero-mijares/img/fondo-compra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.btn {
+    background: black;
+    border-radius: 0;
+    border-color: black;
+}
+
+.pre--parrafo {
+    color: var(--rojo);
+    text-align: justify;
+}
+.texto--parrafo {
+    color: white;
+    text-align: justify;
+}
+/* Fin Compra Ticket */
+
+/* Notas Gala */
+.titulo-nota {
+    font-size: 1.6rem;
+}
+.texto-rojo{
+    color: var(--rojo);
+}
+
+.fondo-resena {
+    background-image: url(https://static.puntoticket.com/especiales/swg147_lucero-mijares/img/fondo-resena.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Fin Notas Gala */
+
+
+
+
+
+
+
+
+
+
+
+
+
